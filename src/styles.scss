@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$color-primary: #008037;
+$color-secondary: #7CBB00;
+$color-terciary: #C9E265;
+
+a:hover {
+    color: $color-secondary
+}
