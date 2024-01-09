@@ -1,3 +1,8 @@
 $color-primary: #008037;
 $color-secondary: #7CBB00;
 $color-terciary: #C9E265;
+
+
+a .active { 
+    color: $color-secondary;
+}

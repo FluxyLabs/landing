@@ -1,0 +1,14 @@
+$color-primary: #008037;
+$color-secondary: #7CBB00;
+$color-terciary: #C9E265;
+.slide { 
+    transition: transform 0.5s ease;
+}
+
+.title-label {
+    color: $color-terciary
+}
+
+.title {
+    color: $color-primary
+}

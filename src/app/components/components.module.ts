@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { StatsComponent } from './stats/stats.component';
 import { FeaturesComponent } from './features/features.component';
 import { HeroComponent } from './hero/hero.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -24,7 +25,8 @@ import { HeroComponent } from './hero/hero.component';
     HeroComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class ComponentsModule { }

@@ -1,1 +1,90 @@
-<p>contact works!</p>
+<div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+      <defs>
+        <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-64" patternUnits="userSpaceOnUse">
+          <path d="M100 200V.5M.5 .5H200" fill="none" />
+        </pattern>
+      </defs>
+      <svg x="50%" y="-64" class="overflow-visible fill-gray-50">
+        <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M299.5 800h201v201h-201Z" stroke-width="0" />
+      </svg>
+      <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
+    </svg>
+    <div class="mx-auto max-w-xl lg:max-w-5xl">
+      <h2 class="text-4xl font-bold tracking-tight text-gray-600">Contáctanos</h2>
+      <p class="mt-2 text-lg leading-8 text-[#7CBB00]">Y haz realidad la transformación digital de tu administración</p>
+      <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
+        <form action="#" method="POST" class="lg:flex-auto">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <div class="sm:col-span-2">
+                <div>
+                    <label for="reason" class="block text-sm font-medium leading-6 text-gray-600">Motivo de tu contacto*</label>
+                    <select id="reason" name="reason" class="mt-2 block w-full rounded-3xl border-0 py-3 pl-3 pr-10 text-gray-600 ring-1 ring-inset ring-green-700 focus:ring-2 focus:ring-green-600 sm:text-sm sm:leading-6">
+                        <option selected>Selecciona</option>
+                        <option>Motivo 1 </option>
+                        <option>Motivo 2</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="reason" class="block text-sm font-medium leading-6 text-gray-600">País*</label>
+                    <select id="reason" name="reason" class="mt-2 block w-full rounded-3xl  border-0 py-3 pl-3 pr-10 text-gray-600 ring-1 ring-inset ring-green-700 focus:ring-2 focus:ring-green-600 sm:text-sm sm:leading-6">
+                        <option selected>Selecciona</option>
+                        <option>Colombia </option>
+                    </select>
+                </div>
+            </div>
+            <div>
+              <label for="whatsapp-contact" class="block text-sm font-semibold leading-6 text-gray-600">Número de whatsapp</label>
+              <div class="mt-2.5">
+                <input type="text" name="whatsapp-contact" id="whatsapp-contact" placeholder="Ingresa tu número de whatsapp" autocomplete="family-name" class="block w-full rounded-3xl border-0 px-3.5 py-3 text-gray-600 shadow-lg ring-1 ring-inset ring-green-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div>
+              <label for="fullName" class="block text-sm font-semibold leading-6 text-gray-600">Nombre completo</label>
+              <div class="mt-2.5">
+                <input id="fullName" name="fullName" placeholder="Ingresa tu nombre completo" type="text" class="block w-full rounded-3xl border-0 px-3.5 py-3 text-gray-600 shadow-lg ring-1 ring-inset ring-green-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div>
+              <label for="city" class="block text-sm font-semibold leading-6 text-gray-600">Ciudad</label>
+              <div class="mt-2.5">
+                <input type="url" name="city" id="city" placeholder="Ingresa la ciudad de donde nos contactas" class="block w-full rounded-3xl border-0 px-3.5 py-3 text-gray-600 shadow-lg ring-1 ring-inset ring-green-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block text-sm font-semibold leading-6 text-gray-600">Comentarios adicionales</label>
+              <div class="mt-2.5">
+                <textarea id="message" name="message" rows="4" class="block w-full rounded-3xl border-0 px-3.5 py-3 text-gray-600 shadow-lg ring-1 ring-inset ring-green-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"></textarea>
+              </div>
+            </div>
+           
+          </div>
+          <div class="mt-10">
+            <button type="submit" class="block w-full rounded-3xl bg-green-600 px-3.5 py-3.5 text-center text-sm font-semibold text-white shadow-lg hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">Enviar mensaje</button>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-gray-500">Al enviar este formulario, acepto las <a href="#" class="font-semibold text-green-600">políticas&nbsp;de privacidad</a>.</p>
+        </form>
+        <div class="lg:mt-6 lg:w-80 lg:flex-none">
+          <img class="h-12 w-auto" src="assets/images/header-logo.png" alt="">
+          <figure class="mt-10">
+            <blockquote class="text-base font-semibold leading-8 text-gray-600">
+              <p>"Simplificamos la gestión de sus solicitudes, pagos y comunicación, brindándoles una experiencia más cómoda y transparente. ¡Estamos comprometidos con su comodidad y bienestar en su comunidad!"</p>
+            </blockquote>
+            <figcaption class="mt-10 flex gap-x-6">
+              <img src="assets/images/rounded-logo.png" alt="" class="h-12 w-12 flex-none rounded-full bg-gray-50">
+              <div>
+                <div class="text-base font-semibold text-green-700">By Total Management Group</div>
+                <div class="text-sm leading-6 text-gray-600">Envigado (Ant), Colombia</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-xl lg:max-w-5xl mx-auto mt-12">
+        <iframe class="w-full h-auto lg:min-h-72 rounded-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.677799477681!2d-75.57145828595309!3d6.173874028843507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468379babaa47d%3A0x22d6fb0724fe982b!2sTotal%20Management%20Group!5e0!3m2!1ses-419!2sco!4v1676952260342!5m2!1ses-419!2sco"></iframe>
+    </div>
+  </div>
+  

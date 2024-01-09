@@ -1,4 +1,4 @@
-<header class="absolute inset-x-0 top-0 z-50">
+<header class="absolute inset-x-0 top-0 z-50  ">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
@@ -15,14 +15,14 @@
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm font-semibold leading-6 text-white">Inicio</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-white">Empresa</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-white">Servicios</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-white">Actualidad</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-white">Contáctanos</a>
+        <a [routerLink]="['/home']" routerLinkActive="active"  class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home'}">Inicio</a>
+        <a [routerLink]="['/company']" routerLinkActive="active" class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home'}">Empresa</a>
+        <a [routerLink]="['/services']" routerLinkActive="active" class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home'}">Servicios</a>
+        <a [routerLink]="['/notices']" routerLinkActive="active" class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home'}">Actualidad</a>
+        <a [routerLink]="['/contact']" routerLinkActive="active" class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home'}">Contáctanos</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm font-semibold leading-6 text-white">Iniciar sesión <span aria-hidden="true">&rarr;</span></a>
+        <a href="#" class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home'}">Iniciar sesión <span aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
