@@ -2,13 +2,18 @@
 <footer class="bg-[#008037] mt-20" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6  pt-16 pb-10 sm:pt-24 lg:px-8 ">
-    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-      <img class="xl:h-auto h-20" src="assets/images/footer-logo.png" alt="Company name">
-      <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-6">
-        <div class="md:grid md:grid-cols-2 md:gap-8">
+    <div class="xl:grid xl:grid-cols-7 xl:gap-5">
+      <img class="xl:h-80 h-20 col-span-2" src="assets/images/footer-logo.png" alt="Company name">
+      <div class="mt-8 md:grid md:grid-cols-2 gap-8 xl:col-span-5 xl:mt-6">
+        <div class="md:grid md:grid-cols-2 md:gap-4 flex flex-col justify-start">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-white">Asambleas</h3>
-            <ul role="list" class="mt-12 space-y-2">
+            <div class="flex flex-nowrap items-center">
+              <h3 (click)="hideList1 = !hideList1" class="text-base font-semibold leading-6 text-white">Asambleas</h3>
+              <svg class="-mr-1 h-5 w-5 text-white md:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <ul role="list" class="mt-6 space-y-1 md:block " [ngClass]="{'hidden': hideList1}" >
               <li>
                 <a href="#" class="text-sm leading-6 text-gray-100 hover:text-white">Votaciones por WhatsApp </a>
               </li>
@@ -27,8 +32,13 @@
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-white">Servicio al Cliente y Marketing Digital</h3>
-            <ul role="list" class="mt-6 space-y-2">
+            <div class="flex flex-nowrap items-center">
+              <h3 (click)="hideList2 = !hideList2" class="text-base font-semibold leading-6 text-white">Servicio al Cliente y Marketing Digital</h3>
+              <svg class="-mr-1 h-5 w-5 text-white md:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <ul role="list" [ngClass]="{'hidden': hideList2}" class="mt-6 space-y-1 md:block ">
               <li>
                 <a href="#" class="text-sm leading-6 text-gray-100 hover:text-white">WhatsApp</a>
               </li>
@@ -41,10 +51,15 @@
             </ul>
           </div>
         </div>
-        <div class="md:grid md:grid-cols-2 md:gap-8">
+        <div class="md:grid md:grid-cols-2 md:gap-4 md:mt-0 mt-10 flex flex-col justify-start">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-white">Servicios para Administraciones</h3>
-            <ul role="list" class="mt-6 space-y-2">
+            <div class="flex flex-nowrap items-center">
+              <h3 (click)="hideList3 = !hideList3" class="text-base font-semibold leading-6 text-white">Servicios para Administraciones</h3>
+              <svg class="-mr-1 h-5 w-5 text-white md:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <ul role="list" [ngClass]="{'hidden': hideList3}" class="mt-6 space-y-1 md:block ">
               <li>
                 <a href="#" class="text-sm leading-6 text-gray-100 hover:text-white">Automaticación de Procesos</a>
               </li>
@@ -78,8 +93,13 @@
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-white">Servicios Propietarios y Residentes</h3>
-            <ul role="list" class="mt-6 space-y-2">
+            <div class="flex flex-nowrap items-center">
+              <h3 (click)="hideList4 = !hideList4" class="text-base font-semibold leading-6 text-white ">Servicios Propietarios y Residentes</h3>
+              <svg class="-mr-1 h-5 w-5 text-white md:hidden" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <ul role="list" [ngClass]="{'hidden': hideList4}" class="mt-6 space-y-1 md:block ">
               <li>
                 <a href="#" class="text-sm leading-6 text-gray-100 hover:text-white">Clasificados</a>
               </li>

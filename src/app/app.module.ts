@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { ComponentsModule } from './components/components.module';
+import { CountUpDirective } from './count-up.directive';
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
     
   ],
   imports: [

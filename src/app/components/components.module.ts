@@ -6,6 +6,8 @@ import { StatsComponent } from './stats/stats.component';
 import { FeaturesComponent } from './features/features.component';
 import { HeroComponent } from './hero/hero.component';
 import { RouterModule } from '@angular/router';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
+import { CountUpDirective } from '../count-up.directive';
 
 
 
@@ -15,7 +17,9 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     StatsComponent,
     FeaturesComponent,
-    HeroComponent
+    HeroComponent,
+    MobileMenuComponent,
+    CountUpDirective
   ],
   exports: [
     HeaderComponent,

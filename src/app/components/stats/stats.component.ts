@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-stats',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./stats.component.scss']
 })
 export class StatsComponent {
-
+  totalUsers = 35000; 
+  totalPropertys = 14000; 
+  totalCoPropertys = 235; 
 }

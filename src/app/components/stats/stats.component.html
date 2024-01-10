@@ -8,16 +8,14 @@
     <dl class="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-x-8 gap-y-10 text-gray sm:mt-20 sm:grid-cols-1 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <div class="flex flex-col justify-center text-center gap-y-3 pl-6">
             <dt class="text-sm leading-6 lg:text-base ">Usuarios activos</dt>
-            <dd class="order-first text-3xl lg:text-5xl text-[#008037] font-semibold tracking-tight">35.000+</dd>
+            <dd  appCountUp [targetValue]="totalUsers" class="order-first text-3xl lg:text-5xl text-[#008037] font-semibold tracking-tight">{{totalUsers}}</dd>
         </div>
         <div class="flex flex-col justify-center text-center gap-y-3 border-l border-gray/10 pl-6">
             <dt class="text-sm leading-6 lg:text-base ">Inmuebles registrados</dt>
-            <dd class="order-first text-3xl lg:text-5xl text-[#008037] font-semibold tracking-tight">14.000+</dd>
+            <dd  appCountUp [targetValue]="totalPropertys" class="order-first text-3xl lg:text-5xl text-[#008037] font-semibold tracking-tight">{{totalPropertys}}</dd>
         </div>
         <div class="flex flex-col justify-center text-center gap-y-3 border-l border-gray/10 pl-6">
             <dt class="text-sm leading-6 lg:text-base ">Copropiedades</dt>
-            <dd class="order-first text-3xl lg:text-5xl text-[#008037] font-semibold tracking-tight">235+</dd>
+            <dd  appCountUp [targetValue]="totalCoPropertys" class="order-first text-3xl lg:text-5xl text-[#008037] font-semibold tracking-tight">{{totalCoPropertys}}</dd>
         </div>
     </dl>
-
-</div>

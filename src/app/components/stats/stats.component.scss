@@ -1,0 +1,19 @@
+// styles.scss
+
+@keyframes countUp {
+    from {
+      counter-increment: count 0; // Inicia desde 0
+    }
+    to {
+      counter-increment: count var(--target-value); // Finaliza en el valor especificado
+    }
+  }
+  
+  .counter {
+    font-size: 24px; // Ajusta el tamaño del texto según tus necesidades
+    font-family: Arial, sans-serif; // Ajusta la fuente según tus necesidades
+    overflow: hidden; // Oculta el contenido que se desborda
+    animation: countUp 5s ease-out; // Duración de la animación y función de aceleración
+    counter-reset: count; // Inicia el contador en 0
+  }
+  

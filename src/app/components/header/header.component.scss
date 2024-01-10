@@ -6,3 +6,33 @@ $color-terciary: #C9E265;
 a .active { 
     color: $color-secondary;
 }
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-custom {
+    background-color: #FFFFFF !important;
+}
+
+
+
+
+// styles.scss
+
+@keyframes fadeInOut {
+    from {
+      background-color: transparent; // Fondo inicial
+    }
+    to {
+      background-color: black; // Fondo final
+    }
+  }
+  
+  nav {
+    transition: background-color 0.5s ease; // Transición suave de 0.5 segundos
+    &.scrolling {
+      animation: fadeInOut 0.5s ease; // Aplica la animación solo cuando se desencadena el evento de scroll
+    }
+  }
+  
