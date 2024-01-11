@@ -4,12 +4,12 @@
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img class="h-20 w-auto" *ngIf="currentUrl === '/home'" src="assets/images/header-logo.png" alt="">
-            <img class="h-20 w-auto" *ngIf="currentUrl !== '/home'" src="assets/images/header-light-logo.png" alt="">
+            <img class="h-20 w-auto" *ngIf="currentUrl == '/home'" src="assets/images/header-logo.png" alt="">
+            <img class="h-20 w-auto" *ngIf="currentUrl != '/home'" src="assets/images/header-light-logo.png" alt="">
           </a>
         </div>
         <div class="flex lg:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md px-2.5 text-gray-400">
+          <button type="button" (click)="showMobileMenu = !showMobileMenu" class="-m-2.5 inline-flex items-center justify-center rounded-md px-2.5 text-gray-400">
             <span class="sr-only">Open main menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -22,11 +22,12 @@
           <a [routerLink]="['/services']" routerLinkActive="active" class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home'}">Servicios</a>
           <a [routerLink]="['/notices']" routerLinkActive="active" class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home'}">Actualidad</a>
           <a [routerLink]="['/contact']" routerLinkActive="active" class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home'}">Contáctanos</a>
+          <a [routerLink]="['/pricing']" routerLinkActive="active" class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home'}">Planes</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" class="text-sm font-semibold leading-6 text-black" [ngClass]="{'text-white': currentUrl == '/home', }">Iniciar sesión <span aria-hidden="true">&rarr;</span></a>
         </div>
       </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
-   
+   <app-mobile-menu *ngIf="showMobileMenu" (close)="toggleMobileMenu()" ></app-mobile-menu>
   </header>

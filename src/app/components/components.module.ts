@@ -8,6 +8,8 @@ import { HeroComponent } from './hero/hero.component';
 import { RouterModule } from '@angular/router';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { CountUpDirective } from '../count-up.directive';
+import { BlogComponent } from './blog/blog.component';
+import { PricingPreviewComponent } from './pricing-preview/pricing-preview.component';
 
 
 
@@ -19,14 +21,18 @@ import { CountUpDirective } from '../count-up.directive';
     FeaturesComponent,
     HeroComponent,
     MobileMenuComponent,
-    CountUpDirective
+    CountUpDirective,
+    BlogComponent,
+    PricingPreviewComponent
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     StatsComponent,
     FeaturesComponent,
-    HeroComponent
+    HeroComponent,
+    BlogComponent,
+    PricingPreviewComponent
   ],
   imports: [
     CommonModule,

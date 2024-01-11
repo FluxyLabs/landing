@@ -9,6 +9,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   public currentUrl = '';
   public isLightBackground = false;
+  public showMobileMenu = false;
   ngOnInit() {
     this.router.events.subscribe((event) => {
       this.currentUrl = this.router.url.toString();
@@ -36,7 +37,10 @@ export class HeaderComponent implements OnInit {
       this.renderer.addClass(this.el.nativeElement, 'scrolling');
       this.isLightBackground = false;
       this.currentUrl = this.router.url.toString();
-    }
-  }
+    };
+  };
+  toggleMobileMenu() {
+    this.showMobileMenu =!this.showMobileMenu;
+  };
 
 }

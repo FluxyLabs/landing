@@ -5,6 +5,7 @@ import { CompanyComponent } from './pages/company/company.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NoticesComponent } from './pages/notices/notices.component';
 import { ServicesComponent } from './pages/services/services.component';
+import { PricingComponent } from './pages/pricing/pricing.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'services', 
     component: ServicesComponent
+  },
+  {
+    path: 'pricing', 
+    component: PricingComponent
   }
 
 ];
