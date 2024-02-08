@@ -30,7 +30,7 @@ const routes: Routes = [
     component : NoticesComponent
   },
   {
-    path: 'services', 
+    path: 'services/:Sid', 
     component: ServicesComponent
   },
   {

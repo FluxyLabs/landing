@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
   public currentUrl = '';
   public isLightBackground = false;
   public showMobileMenu = false;
+  public showServicesMenu: boolean = false;
+  public scrollOffset:number = 0;
   ngOnInit() {
     this.router.events.subscribe((event) => {
       this.currentUrl = this.router.url.toString();
@@ -23,10 +25,11 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event:any) {
     // Define la cantidad de píxeles que el usuario debe hacer scroll antes de cambiar el fondo
-    const scrollOffset = 300;
-
+    if (window.innerWidth  > 700) {
+       this.scrollOffset = 100;
+    }
     // Verifica la posición actual del scroll
-    if (window.scrollY > scrollOffset) {
+    if (window.scrollY > this.scrollOffset) {
       // Cambia el fondo cuando el usuario ha hecho scroll más allá del umbral definido
       this.isLightBackground = true;
       this.currentUrl = '/home'
@@ -42,5 +45,9 @@ export class HeaderComponent implements OnInit {
   toggleMobileMenu() {
     this.showMobileMenu =!this.showMobileMenu;
   };
-
+  closeServiceMenu(event:string){
+    if (event === 'closeService') {
+      this.showServicesMenu = false;
+    }
+  }
 }

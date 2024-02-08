@@ -13,7 +13,9 @@ export class CountUpDirective implements OnInit {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   ngOnInit() {
-    this.animateCountUp();
+    setTimeout(() => {
+      this.animateCountUp();
+    },2000);
   }
 
   private animateCountUp() {

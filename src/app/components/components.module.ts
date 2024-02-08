@@ -10,6 +10,7 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { CountUpDirective } from '../count-up.directive';
 import { BlogComponent } from './blog/blog.component';
 import { PricingPreviewComponent } from './pricing-preview/pricing-preview.component';
+import { ServicesMenuComponent } from './services-menu/services-menu.component';
 
 
 
@@ -23,7 +24,8 @@ import { PricingPreviewComponent } from './pricing-preview/pricing-preview.compo
     MobileMenuComponent,
     CountUpDirective,
     BlogComponent,
-    PricingPreviewComponent
+    PricingPreviewComponent,
+    ServicesMenuComponent
   ],
   exports: [
     HeaderComponent,

@@ -39,4 +39,6 @@ export class HeroComponent {
   changeSlide() {
     this.currentSlideIndex = (this.currentSlideIndex + 1) % this.slides.length;
   }
+
+ 
 }

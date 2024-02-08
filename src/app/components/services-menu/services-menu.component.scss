@@ -1,0 +1,14 @@
+svg { 
+    @apply h-6 w-6 text-gray-600  group-hover:text-[#7CBB00]
+}
+
+$color-secondary: #7CBB00;
+$color-terciary: #C9E265;
+
+a:hover {
+    color: $color-secondary
+}
+
+.active { 
+    color: $color-secondary;
+}
